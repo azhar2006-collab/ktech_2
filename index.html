@@ -584,7 +584,15 @@
 .city-image img{
     width:100%;
     max-width:620px;
-    height:280px;
+    height:300px;
+    border-radius:16px;
+    object-fit:cover;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+.city1-image img{
+    width:125%;
+    max-width:750px;
+    height:300px;
     border-radius:16px;
     object-fit:cover;
     box-shadow:0 12px 30px rgba(0,0,0,.12);
@@ -626,11 +634,15 @@
       <div class="hero-carousel-slide">
         <img src="ktech-wedding-return-gift-collection-banner(2).webp" alt="Wedding Return Gift Collection">
       </div>
+      <div class="hero-carousel-slide">
+        <img src="ktech-trusted-supply-modern-retail-section.png" alt="Trusted Supply for Modern Retail">
+      </div>
     </div>
     <div class="hero-carousel-dots">
       <div class="hero-carousel-dot active" data-slide="0"></div>
       <div class="hero-carousel-dot" data-slide="1"></div>
       <div class="hero-carousel-dot" data-slide="2"></div>
+      <div class="hero-carousel-dot" data-slide="3"></div>
     </div>
   </div>
 </section>
@@ -714,6 +726,35 @@
           <span class="tag">Personalised Gifts</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SECTION 4 – Retail & Bulk Supply -->
+<section style="padding: 76px 5%; background: #fff;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div class="two-col">
+      <div class="city-content">
+        <div class="eyebrow">Retail &amp; Bulk Supply</div>
+        <h2 class="section-title">Retail &amp; Bulk Home Appliance Supply for Supermarkets &amp; Retail Chains in Chennai &amp; Coimbatore</h2>
+        <p class="section-body">KTech is a trusted manufacturer, supplier, wholesaler, and distributor of home appliances for supermarkets, retail chains, dealers, and wholesale businesses across Chennai and Coimbatore. With over 25 years of manufacturing experience, we provide high-quality consumer electronics and kitchen appliances backed by reliable supply, competitive pricing, and consistent product availability.</p>
+        <p class="section-body" style="margin-bottom: 18px;">Whether you're expanding a retail store, managing a supermarket chain, or sourcing products for wholesale distribution, KTech offers bulk supply solutions tailored to your business requirements. Our wide range of products, quality assurance, and efficient distribution network make us a preferred partner for retailers across Tamil Nadu.</p>
+        <p style="font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 14px;">We Supply To:</p>
+        <ul class="check-list">
+          <li>Supermarkets &amp; Hypermarkets</li>
+          <li>Retail Chains</li>
+          <li>Wholesale Dealers</li>
+          <li>Distributors</li>
+          <li>Department Stores</li>
+          <li>Consumer Electronics Showrooms</li>
+          <li>Kitchen Appliance Retailers</li>
+          <li>Corporate Procurement Teams</li>
+        </ul>
+      </div>
+      <div class="city1-image">
+          <img src="ktech-retail-bulk-home-appliance-supply-banner.png" alt="Retail & Bulk Home Appliance Supply">
       </div>
     </div>
   </div>
@@ -1133,7 +1174,7 @@ function highlightCity(cityName) {
 
 // Hero Carousel Dot Navigation - Wait and Scroll
 let currentSlide = 0;
-const totalSlides = 3;
+const totalSlides = 4;
 let carouselTimeout;
 const WAIT_TIME = 3000; // Wait 3 seconds before scrolling
 const SCROLL_TIME = 800; // Scroll animation duration
